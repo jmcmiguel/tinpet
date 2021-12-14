@@ -1,0 +1,502 @@
+<resources>
+    <string name="app_name">Tin Pet</string>
+
+    <string name="title_slider_1">PASSEZ A TINDER GOLD</string>
+    <string name="description_slider_1">Decouvrez qui vous a envoyé des Likes et encore plus</string>
+
+    <string name="title_slider_2">Obtenez plus de matchs rapidement</string>
+    <string name="description_slider_2">Boostez votre profil une fois par mois</string>
+
+    <string name="title_slider_3">Swipez dans le monde entier</string>
+    <string name="description_slider_3">Avec Tinder Plus, obtenez un passeport pour matcher dans le monde entier</string>
+
+    <string name="title_slider_4">Demarquez vous avec des Super Likes</string>
+    <string name="description_slider_4">Multipliez vos chances de Matchs par 3</string>
+
+    <string name="title_slider_5">Je voulais swiper vers la droite</string>
+    <string name="description_slider_5">Profitez du nombre illimites de Retour en arriere avec Tinder Plus</string>
+
+    <string name="title_slider_6">Augmentez vos chances de Matchs</string>
+    <string name="description_slider_6">Profitez du nombre illimites de Likes avec Tinder Plus</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  Report Type  -->
+    <string-array name="report_type">
+        <item>Hate Speech</item>
+        <item>Bullying</item>
+        <item>Violent Threats</item>
+        <item>Animal Abuse</item>
+        <item>Something Else</item>
+    </string-array>
+
+    <!--  GENDERS  -->
+    <string-array name="genders_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Bisexual</item>
+        <item>Pansexual</item>
+        <item>Trans - Man</item>
+        <item>Trans - Woman</item>
+        <item>Binary</item>
+    </string-array>
+
+    <!--  BREEDS  -->
+    <string-array name="breeds_size_array">
+        <item>Small Breeds</item>
+        <item>Medium Breeds</item>
+        <item>Large Breeds</item>
+        <item>Mixed Breeds (2 Breeds)</item>
+        <item>Mixed Breeds (3 Breeds)</item>
+        <item>Mixed Breeds (4 Breeds)</item>
+        <item>Mixed Breeds (5 Breeds)</item>
+    </string-array>
+
+    <!--  SMALL DOG BREEDS  -->
+    <string-array name="small_breeds_array">
+        <item>Australian Terrier</item>
+        <item>Basenji</item>
+        <item>Beagle</item>
+        <item>Bichon Frise</item>
+        <item>Biewer Terrier</item>
+        <item>Bolognise</item>
+        <item>Border Terrier</item>
+        <item>Boston Terrier</item>
+        <item>Brussels Griffon</item>
+        <item>Cairn Terrier</item>
+        <item>Chihuahua</item>
+        <item>Chinese Crested</item>
+        <item>Coton de Tulear</item>
+        <item>Dachshund – Miniature</item>
+        <item>French Bulldog</item>
+        <item>Havanese</item>
+        <item>Italian Greyhound</item>
+        <item>Japanese Chin</item>
+        <item>King Charles Spaniel</item>
+        <item>Lhasa Apso</item>
+        <item>Maltese</item>
+        <item>Manchester Terrier</item>
+        <item>Miniature Pinscher</item>
+        <item>Miniature Schnauzer</item>
+        <item>Papillon</item>
+        <item>Pekingese</item>
+        <item>Pembroke Welsh Corgi</item>
+        <item>Pomeranian</item>
+        <item>Pug</item>
+        <item>Russel Terrier</item>
+        <item>Schipperke</item>
+        <item>Scottish Terrier</item>
+        <item>Shih Tzu</item>
+        <item>Silky Terrier</item>
+        <item>Skye Terrier</item>
+        <item>Smooth Fox Terrier</item>
+        <item>Tibetan Spaniel</item>
+        <item>Toy Poodle</item>
+        <item>West Highland Terrier</item>
+        <item>Yorkshire Terrier</item>
+    </string-array>
+
+    <!--  MEDIUM BREEDS  -->
+    <string-array name="medium_breeds_array">
+        <item>Airedale Terrier</item>
+        <item>Alaskan Klee Kai</item>
+        <item>American English Coonhound</item>
+        <item>American Foxhound</item>
+        <item>American Leopard Hound</item>
+        <item>American Staffordshire Terrier</item>
+        <item>American Water Spaniel</item>
+        <item>Appenzeller Sennenhund</item>
+        <item>Aspin</item>
+        <item>Australian Cattle Dog</item>
+        <item>Australian Kelpie</item>
+        <item>Australian Shepherd</item>
+        <item>Australian Stumpy Tail Cattle Dog</item>
+        <item>Barbado da Terceira</item>
+        <item>Barbet</item>
+        <item>Basset Fauve de Bretagne</item>
+        <item>Basset Hound</item>
+        <item>Bavarian Mountain Scent Hound</item>
+        <item>Bearded Collie</item>
+        <item>Bergamasco Sheepdog</item>
+        <item>Bohemian Shepherd</item>
+        <item>Border Collie</item>
+        <item>Boykin Spaniel</item>
+        <item>Braque du Bourbonnais</item>
+        <item>Braque Francais Pyrenean</item>
+        <item>Brittany</item>
+        <item>Bull Terrier</item>
+        <item>Bulldog</item>
+        <item>Canaan Dog</item>
+        <item>Carolina Dog</item>
+        <item>Chow Chow</item>
+        <item>Clumber Spaniel</item>
+        <item>Collie</item>
+        <item>Croatian Sheepdog</item>
+        <item>Czechoslovakian Vlcak</item>
+        <item>Dalmatian</item>
+        <item>Deutscher Wachtelhund</item>
+        <item>Drentsche Patrijshond</item>
+        <item>Drever</item>
+        <item>Dutch Shepherd</item>
+        <item>English Foxhound</item>
+        <item>English Setter</item>
+        <item>English Springer Spaniel</item>
+        <item>Entlebucher Mountain Dog</item>
+        <item>Eurasier</item>
+        <item>Flat-Coated Retriever</item>
+        <item>French Spaniel</item>
+        <item>German Pinscher</item>
+        <item>German Wirehaired Pointer</item>
+        <item>Grand Basset Griffon Vendeen</item>
+        <item>Hamiltonstovare</item>
+        <item>Hokkaido</item>
+        <item>Icelandic Sheepdog</item>
+        <item>Japanese Akitainu</item>
+        <item>Jindo</item>
+        <item>Kai Ken</item>
+        <item>Karelian Bear Dog</item>
+        <item>Keeshond</item>
+        <item>Kishu Ken</item>
+        <item>Kromfohrlander</item>
+        <item>Lapponian Herder</item>
+        <item>Miniature American Sheperd</item>
+        <item>Mountain Cur</item>
+        <item>Mudi</item>
+        <item>Nederlandse Kooikerhondje</item>
+        <item>Norwegian Buhund</item>
+        <item>Norwegian Elkhound</item>
+        <item>Nova Scotia Duck Tolling Retriever</item>
+        <item>Pharaoh Hound</item>
+        <item>Plott Hound</item>
+        <item>Polish Lowland Sheepdog</item>
+        <item>Poodle (Standard)</item>
+        <item>Porcelaine</item>
+        <item>Portuguese Pondengo</item>
+        <item>Portuguese Pointer</item>
+        <item>Portuguese Sheepdog</item>
+        <item>Pudelpointer</item>
+        <item>Pyrenean Shepherd</item>
+        <item>Saluki</item>
+        <item>Schapendoes</item>
+        <item>Segugio Italiano</item>
+        <item>Shikoku</item>
+        <item>Slovakian Wirehaired Pointer</item>
+        <item>Slovensky Kopov</item>
+        <item>Small Munsterlander</item>
+        <item>Spanish Water Dog</item>
+        <item>Stabyhoun</item>
+        <item>Swedish Lapphund</item>
+        <item>Taiwan Dog</item>
+        <item>Thai Ridgeback</item>
+        <item>Transylvanian Hound</item>
+        <item>Treeing Tennessee Brindle</item>
+        <item>Vizsla</item>
+        <item>Volpino Italiano</item>
+        <item>Wetterhoun</item>
+        <item>Whippet</item>
+        <item>Wirehaired Pointing Griffon</item>
+        <item>Wirehaired Vizsla</item>
+        <item>Working Kelpie</item>
+        <item>Yakutian Laika</item>
+    </string-array>
+
+    <!--  LARGE BREEDS  -->
+    <string-array name="large_breeds_array">
+        <item>Afghan Hound</item>
+        <item>Akita</item>
+        <item>Alaskan Malamute</item>
+        <item>American Bulldog</item>
+        <item>Anatolian Shepherd Dog</item>
+        <item>Azawakh</item>
+        <item>Beauceron</item>
+        <item>Belgian Laekenois</item>
+        <item>Belgian Malinois</item>
+        <item>Belgian Sheepdog</item>
+        <item>Belgian Tervuren</item>
+        <item>Berger Picard</item>
+        <item>Bernese Mountain Dog</item>
+        <item>Black and Tan Coonhound</item>
+        <item>Black Russian Terrier</item>
+        <item>Bloodhound</item>
+        <item>Bluetick Coonhound</item>
+        <item>Boerboel</item>
+        <item>Borzoi</item>
+        <item>Bouvier des Flandres</item>
+        <item>Boxer</item>
+        <item>Bracco Italiano</item>
+        <item>Briard</item>
+        <item>Broholmer</item>
+        <item>Bullmastiff</item>
+        <item>Cane Corso</item>
+        <item>Catahoula Leopard Dog</item>
+        <item>Caucasian Shepherd Dog</item>
+        <item>Central Asian Shepherd Dog</item>
+        <item>Chesapeake Bay Retriever</item>
+        <item>Chinook</item>
+        <item>Curly-Coated Retriever</item>
+        <item>Doberman Pinscher</item>
+        <item>Dogo Argentino</item>
+        <item>Dogue de Bordeaux</item>
+        <item>Estrela Mountain Dog</item>
+        <item>German Longhaired Pointer</item>
+        <item>Gordon Setter</item>
+        <item>Great Dane</item>
+        <item>Great Pyrenees</item>
+        <item>Greyhound</item>
+        <item>Hanoverian Scenthound</item>
+        <item>Hovawart</item>
+        <item>Ibizan Hound</item>
+        <item>Irish Setter</item>
+        <item>Irish Water Spaniel</item>
+        <item>Irish Wolfhound</item>
+        <item>Komondor</item>
+        <item>Kuvasz</item>
+        <item>Leonberger</item>
+        <item>Mastiff</item>
+        <item>Neapolitan Mastiff</item>
+        <item>Newfoundland</item>
+        <item>Old English Sheepdog</item>
+        <item>Otterhound</item>
+        <item>Perro de Presa Canario</item>
+        <item>Pointer</item>
+        <item>Pyrenean Mastiff</item>
+        <item>Rafeiro do Alentejo</item>
+        <item>Redbone Coonhound</item>
+        <item>Rhodesian Ridgeback</item>
+        <item>Romanian Mioritic Shepherd Dog</item>
+        <item>Saint Bernard</item>
+        <item>Scottish Deerhound</item>
+        <item>Siberian Husky</item>
+        <item>Sloughi</item>
+        <item>Slovensky Cuvac</item>
+        <item>Spanish Mastiff</item>
+        <item>Tibetan Mastiff</item>
+        <item>Tornjak</item>
+        <item>Tosa</item>
+        <item>Weimaraner</item>
+    </string-array>
+
+    <!--  ALL DOG BREEDS  -->
+    <string-array name="all_breeds_array">
+        <item>Afghan Hound</item>
+        <item>Airedale Terrier</item>
+        <item>Akita</item>
+        <item>Alaskan Klee Kai</item>
+        <item>Alaskan Malamute</item>
+        <item>American Bulldog</item>
+        <item>American English Coonhound</item>
+        <item>American Foxhound</item>
+        <item>American Leopard Hound</item>
+        <item>American Staffordshire Terrier</item>
+        <item>American Water Spaniel</item>
+        <item>Anatolian Shepherd Dog</item>
+        <item>Appenzeller Sennenhund</item>
+        <item>Aspin</item>
+        <item>Australian Cattle Dog</item>
+        <item>Australian Kelpie</item>
+        <item>Australian Shepherd</item>
+        <item>Australian Stumpy Tail Cattle Dog</item>
+        <item>Australian Terrier</item>
+        <item>Azawakh</item>
+        <item>Barbado da Terceira</item>
+        <item>Barbet</item>
+        <item>Basenji</item>
+        <item>Basset Fauve de Bretagne</item>
+        <item>Basset Hound</item>
+        <item>Bavarian Mountain Scent Hound</item>
+        <item>Beagle</item>
+        <item>Bearded Collie</item>
+        <item>Beauceron</item>
+        <item>Belgian Laekenois</item>
+        <item>Belgian Malinois</item>
+        <item>Belgian Sheepdog</item>
+        <item>Belgian Tervuren</item>
+        <item>Bergamasco Sheepdog</item>
+        <item>Berger Picard</item>
+        <item>Bernese Mountain Dog</item>
+        <item>Bichon Frise</item>
+        <item>Biewer Terrier</item>
+        <item>Black and Tan Coonhound</item>
+        <item>Black Russian Terrier</item>
+        <item>Bloodhound</item>
+        <item>Bluetick Coonhound</item>
+        <item>Boerboel</item>
+        <item>Bohemian Shepherd</item>
+        <item>Bolognise</item>
+        <item>Border Collie</item>
+        <item>Border Terrier</item>
+        <item>Borzoi</item>
+        <item>Boston Terrier</item>
+        <item>Bouvier des Flandres</item>
+        <item>Boxer</item>
+        <item>Boykin Spaniel</item>
+        <item>Bracco Italiano</item>
+        <item>Braque du Bourbonnais</item>
+        <item>Braque Francais Pyrenean</item>
+        <item>Briard</item>
+        <item>Brittany</item>
+        <item>Broholmer</item>
+        <item>Brussels Griffon</item>
+        <item>Bull Terrier</item>
+        <item>Bulldog</item>
+        <item>Bullmastiff</item>
+        <item>Cairn Terrier</item>
+        <item>Canaan Dog</item>
+        <item>Cane Corso</item>
+        <item>Carolina Dog</item>
+        <item>Catahoula Leopard Dog</item>
+        <item>Caucasian Shepherd Dog</item>
+        <item>Central Asian Shepherd Dog</item>
+        <item>Chesapeake Bay Retriever</item>
+        <item>Chihuahua</item>
+        <item>Chinese Crested</item>
+        <item>Chinook</item>
+        <item>Chow Chow</item>
+        <item>Clumber Spaniel</item>
+        <item>Collie</item>
+        <item>Coton de Tulear</item>
+        <item>Croatian Sheepdog</item>
+        <item>Curly-Coated Retriever</item>
+        <item>Czechoslovakian Vlcak</item>
+        <item>Dachshund – Miniature</item>
+        <item>Dalmatian</item>
+        <item>Deutscher Wachtelhund</item>
+        <item>Doberman Pinscher</item>
+        <item>Dogo Argentino</item>
+        <item>Dogue de Bordeaux</item>
+        <item>Drentsche Patrijshond</item>
+        <item>Drever</item>
+        <item>Dutch Shepherd</item>
+        <item>English Foxhound</item>
+        <item>English Setter</item>
+        <item>English Springer Spaniel</item>
+        <item>Entlebucher Mountain Dog</item>
+        <item>Estrela Mountain Dog</item>
+        <item>Eurasier</item>
+        <item>Flat-Coated Retriever</item>
+        <item>French Bulldog</item>
+        <item>French Spaniel</item>
+        <item>German Longhaired Pointer</item>
+        <item>German Pinscher</item>
+        <item>German Wirehaired Pointer</item>
+        <item>Gordon Setter</item>
+        <item>Grand Basset Griffon Vendeen</item>
+        <item>Great Dane</item>
+        <item>Great Pyrenees</item>
+        <item>Greyhound</item>
+        <item>Hamiltonstovare</item>
+        <item>Hanoverian Scenthound</item>
+        <item>Havanese</item>
+        <item>Hokkaido</item>
+        <item>Hovawart</item>
+        <item>Ibizan Hound</item>
+        <item>Icelandic Sheepdog</item>
+        <item>Irish Setter</item>
+        <item>Irish Water Spaniel</item>
+        <item>Irish Wolfhound</item>
+        <item>Italian Greyhound</item>
+        <item>Japanese Akitainu</item>
+        <item>Japanese Chin</item>
+        <item>Jindo</item>
+        <item>Kai Ken</item>
+        <item>Karelian Bear Dog</item>
+        <item>Keeshond</item>
+        <item>King Charles Spaniel</item>
+        <item>Kishu Ken</item>
+        <item>Komondor</item>
+        <item>Kromfohrlander</item>
+        <item>Kuvasz</item>
+        <item>Lapponian Herder</item>
+        <item>Leonberger</item>
+        <item>Lhasa Apso</item>
+        <item>Maltese</item>
+        <item>Manchester Terrier</item>
+        <item>Mastiff</item>
+        <item>Miniature American Sheperd</item>
+        <item>Miniature Pinscher</item>
+        <item>Miniature Schnauzer</item>
+        <item>Mountain Cur</item>
+        <item>Mudi</item>
+        <item>Neapolitan Mastiff</item>
+        <item>Nederlandse Kooikerhondje</item>
+        <item>Newfoundland</item>
+        <item>Norwegian Buhund</item>
+        <item>Norwegian Elkhound</item>
+        <item>Nova Scotia Duck Tolling Retriever</item>
+        <item>Old English Sheepdog</item>
+        <item>Otterhound</item>
+        <item>Papillon</item>
+        <item>Pekingese</item>
+        <item>Pembroke Welsh Corgi</item>
+        <item>Perro de Presa Canario</item>
+        <item>Pharaoh Hound</item>
+        <item>Plott Hound</item>
+        <item>Pointer</item>
+        <item>Polish Lowland Sheepdog</item>
+        <item>Pomeranian</item>
+        <item>Poodle (Standard)</item>
+        <item>Porcelaine</item>
+        <item>Portuguese Pointer</item>
+        <item>Portuguese Pondengo</item>
+        <item>Portuguese Sheepdog</item>
+        <item>Pudelpointer</item>
+        <item>Pug</item>
+        <item>Pyrenean Mastiff</item>
+        <item>Pyrenean Shepherd</item>
+        <item>Rafeiro do Alentejo</item>
+        <item>Redbone Coonhound</item>
+        <item>Rhodesian Ridgeback</item>
+        <item>Romanian Mioritic Shepherd Dog</item>
+        <item>Russel Terrier</item>
+        <item>Saint Bernard</item>
+        <item>Saluki</item>
+        <item>Schapendoes</item>
+        <item>Schipperke</item>
+        <item>Scottish Deerhound</item>
+        <item>Scottish Terrier</item>
+        <item>Segugio Italiano</item>
+        <item>Shih Tzu</item>
+        <item>Shikoku</item>
+        <item>Siberian Husky</item>
+        <item>Silky Terrier</item>
+        <item>Skye Terrier</item>
+        <item>Sloughi</item>
+        <item>Slovakian Wirehaired Pointer</item>
+        <item>Slovensky Cuvac</item>
+        <item>Slovensky Kopov</item>
+        <item>Small Munsterlander</item>
+        <item>Smooth Fox Terrier</item>
+        <item>Spanish Mastiff</item>
+        <item>Spanish Water Dog</item>
+        <item>Stabyhoun</item>
+        <item>Swedish Lapphund</item>
+        <item>Taiwan Dog</item>
+        <item>Thai Ridgeback</item>
+        <item>Tibetan Mastiff</item>
+        <item>Tibetan Spaniel</item>
+        <item>Tornjak</item>
+        <item>Tosa</item>
+        <item>Toy Poodle</item>
+        <item>Transylvanian Hound</item>
+        <item>Treeing Tennessee Brindle</item>
+        <item>Vizsla</item>
+        <item>Volpino Italiano</item>
+        <item>Weimaraner</item>
+        <item>West Highland Terrier</item>
+        <item>Wetterhoun</item>
+        <item>Whippet</item>
+        <item>Wirehaired Pointing Griffon</item>
+        <item>Wirehaired Vizsla</item>
+        <item>Working Kelpie</item>
+        <item>Yakutian Laika</item>
+        <item>Yorkshire Terrier</item>
+    </string-array>
+
+    <!--  ADMINS  -->
+    <string-array name="admin_array">
+        <item>Admin 1</item>
+        <item>Admin 2</item>
+    </string-array>
+
+</resources>

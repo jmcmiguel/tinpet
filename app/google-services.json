@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "857118635326",
+    "project_id": "tinpet-401ae",
+    "storage_bucket": "tinpet-401ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857118635326:android:3ab0f7345b02085133286f",
+        "android_client_info": {
+          "package_name": "com.example.tinpet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857118635326-pplgveqsjhvb14ff14nhvje9kvppkqab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tinpet",
+            "certificate_hash": "b0758c1df2312c2831cdff5ed191b1743ef7d988"
+          }
+        },
+        {
+          "client_id": "857118635326-u5er38f9eio181sg2sgal4bolt7gr6bl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyiOtR5dU6_We7DRuqKkt8JqgNSl5Bqio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857118635326-u5er38f9eio181sg2sgal4bolt7gr6bl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

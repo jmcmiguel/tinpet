@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.tinpet.widgets.BounceScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6F7FB"
+    tools:context=".fragments.AccountFragment"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:shape_arc_height="30dp"
+        app:shape_arc_position="bottom">
+
+        <FrameLayout
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layout_view_center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="4dp"
+                    android:src="@drawable/icon_default_user"
+                    app:civ_circle_background_color="@color/browser_actions_bg_grey"
+                    app:layout_anchorGravity="top|center_horizontal"
+                    app:layout_scrollFlags="scroll" />
+
+
+                <TextView
+                    android:id="@+id/txt_account_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="-"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/account_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="-"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/account_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="20dp">
+
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/circle_gray_selector"
+                            android:clickable="true"
+                            android:elevation="2dp"
+                            android:focusable="true"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/btn_settings"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/ic_settings_gray_24dp" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Settings"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_400"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/circle_gray_selector"
+                            android:clickable="true"
+                            android:elevation="2dp"
+                            android:focusable="true"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/btn_change_dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                app:srcCompat="@drawable/ic_add_a_photo_white_24dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Set Profile Photo"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_400"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/circle_gray_selector"
+                            android:clickable="true"
+                            android:elevation="2dp"
+                            android:focusable="true"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/btn_account_edit"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/ic_edit_gray_24dp" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:text="Edit Profile"
+                            android:textAllCaps="true"
+                            android:textColor="@color/md_grey_400"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="30"/>
+
+
+
+</LinearLayout>
+
+</com.example.tinpet.widgets.BounceScrollView>

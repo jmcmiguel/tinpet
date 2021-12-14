@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.tinpet.widgets.BounceScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:background="@color/white"
+        tools:context=".fragments.ChatFragment">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Recent Matches"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_likes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Messages"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/layout_count_message"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/dot_message">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_count_messsage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/emptyChatAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="80dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="No Messages Yet!"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/empty" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</com.example.tinpet.widgets.BounceScrollView>

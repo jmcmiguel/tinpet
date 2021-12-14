@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.tinpet.widgets.BounceScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/loginCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Account Settings"
+            android:textSize="25sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Maximum Distance"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp" />
+
+            <SeekBar
+                android:min="1"
+                android:id="@+id/distance_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Age Range"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp" />
+
+            <SeekBar
+                android:min="1"
+                android:max="30"
+                android:id="@+id/age_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Show Me"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_pref_breed_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small Breed"
+                android:textSize="12sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="horizontal"
+                android:id="@+id/pref_breed_sizes">
+
+                <RadioButton
+                    android:id="@+id/pet_breed_size_small_pref"
+                    style="@android:style/Widget.CompoundButton.RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="breed_size_pref"
+                    android:text="Small" />
+
+                <RadioButton
+                    android:id="@+id/pet_breed_size_medium_pref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="breed_size_pref"
+                    android:text="Medium" />
+
+                <RadioButton
+                    android:id="@+id/pet_breed_size_large_pref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="breed_size_pref"
+                    android:text="Large" />
+
+                <RadioButton
+                    android:id="@+id/pet_breed_size_mixed_pref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="breed_size_pref"
+                    android:text="Mixed" />
+            </RadioGroup>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_signout"
+            fontPath="fonts/Poppins-Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_outline_bg"
+            android:text="Signout"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</com.example.tinpet.widgets.BounceScrollView>

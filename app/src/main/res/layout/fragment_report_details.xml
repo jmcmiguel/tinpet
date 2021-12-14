@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.tinpet.widgets.BounceScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/loginCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Report User"
+            android:textSize="25sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <Spinner
+                android:id="@+id/report_type"
+                style="@style/FirebaseUI.CountrySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_weight="1"
+                android:entries="@array/report_type"
+                android:padding="20dp"
+                android:spinnerMode="dialog" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/report_desc"
+                style="@style/FirebaseUI.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:hint="Add details"
+                android:inputType="textPersonName|text"
+                android:lines="8"
+            android:minLines="6"
+            android:gravity="top|start"
+            android:maxLines="10"
+            android:scrollbars="vertical"
+                android:padding="20dp" />
+
+            <ImageView
+                android:id="@+id/report_img"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/fragment_btn_upload"
+            fontPath="fonts/Poppins-Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_outline_bg"
+            android:text="Add Image"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/fragment_btn_report"
+            fontPath="fonts/Poppins-Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_outline_bg"
+            android:text="Report"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</com.example.tinpet.widgets.BounceScrollView>

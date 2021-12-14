@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.tinpet.widgets.BounceScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/loginCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="User Details"
+            android:textSize="25sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_name"
+                style="@style/FirebaseUI.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:hint="User Name"
+                android:inputType="textPersonName|text"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|start"
+                android:maxLines="10"
+                android:scrollbars="vertical"
+                android:padding="20dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_email"
+                style="@style/FirebaseUI.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:hint="User Email"
+                android:inputType="textPersonName|text"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|start"
+                android:maxLines="10"
+                android:scrollbars="vertical"
+                android:padding="20dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_gender"
+                style="@style/FirebaseUI.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:hint="User Gender"
+                android:inputType="textPersonName|text"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|start"
+                android:maxLines="10"
+                android:scrollbars="vertical"
+                android:padding="20dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_bday"
+                style="@style/FirebaseUI.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:hint="User Birthday"
+                android:inputType="textPersonName|text"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|start"
+                android:maxLines="10"
+                android:scrollbars="vertical"
+                android:padding="20dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Pet Medical Certificate"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/medcert_img"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Owner Valid ID"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/valid_id_img"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_user_approve"
+            fontPath="fonts/Poppins-Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_outline_bg"
+            android:text="Approve User"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</com.example.tinpet.widgets.BounceScrollView>

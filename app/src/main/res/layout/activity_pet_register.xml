@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".activities.PetRegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/loginCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Pet's Information"
+            android:textSize="25sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_pet_name"
+                style="@style/FirebaseUI.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:hint="Pet Name"
+                android:inputType="textPersonName|text"
+                android:padding="20dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/breed_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spnr_breed_size"
+                style="@style/FirebaseUI.CountrySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_weight="1"
+                android:entries="@array/breeds_size_array"
+                android:padding="20dp"
+                android:popupBackground="@color/light_gray"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/spnr_breed"
+                style="@style/FirebaseUI.CountrySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:popupBackground="@color/light_gray"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/spnr_breed2"
+                style="@style/FirebaseUI.CountrySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:popupBackground="@color/light_gray"
+                android:spinnerMode="dialog"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spnr_breed3"
+                style="@style/FirebaseUI.CountrySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:popupBackground="@color/light_gray"
+                android:spinnerMode="dialog"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spnr_breed4"
+                style="@style/FirebaseUI.CountrySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:popupBackground="@color/light_gray"
+                android:spinnerMode="dialog"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spnr_breed5"
+                style="@style/FirebaseUI.CountrySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:popupBackground="@color/light_gray"
+                android:spinnerMode="dialog"
+                android:visibility="gone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/pet_bday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Birthdate" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pet_gender_male"
+                    style="@android:style/Widget.CompoundButton.RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="genderRbClicked"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/pet_gender_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="genderRbClicked"
+                    android:text="Female" />
+            </RadioGroup>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_pet_next"
+            fontPath="fonts/Poppins-Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_outline_bg"
+            android:text="Next"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_pet_register_back"
+        android:layout_width="56dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_outline_bg"
+        android:foreground="?attr/actionModeCloseDrawable"
+        android:foregroundGravity="center" />
+
+</RelativeLayout>
