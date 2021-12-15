@@ -83,12 +83,12 @@ public class EmailLoginActivity extends AppCompatActivity {
                             Log.d("users", snapshot.toString());
 
                             if(snapshot.exists()){
-                                if(user.isEmailVerified() && snapshot.hasChild("approved")){
+                                if(snapshot.hasChild("approved")){
                                     Intent intent = new Intent(mContext, MainActivity.class);
                                     startActivity(intent);
                                     finish();
                                     return;
-                                }else if(user.isEmailVerified() && snapshot.hasChild("adminType")){
+                                }else if(snapshot.hasChild("adminType")){
                                     if(snapshot.child("adminType").getValue().toString().equals("Admin1")){
                                         Intent intent = new Intent(mContext, Admin1Activity.class);
                                         startActivity(intent);
