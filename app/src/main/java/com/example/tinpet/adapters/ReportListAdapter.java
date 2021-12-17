@@ -95,9 +95,11 @@ public class ReportListAdapter extends RecyclerView.Adapter<ReportListAdapter.My
                     reportDesc.setText(item.getReportDetails());
                     reportType.setText(item.getReportCategory());
 
-                    Glide.with(view.getContext())
-                            .load(Uri.parse(item.getReportImageUrl()))
-                            .into(reportPhoto);
+                    if(item.getReportImageUrl() != null){
+                        Glide.with(view.getContext())
+                                .load(Uri.parse(item.getReportImageUrl()))
+                                .into(reportPhoto);
+                    }
 
                     switch (view.getId()) {
                         case R.id.fragment_btn_disable:
@@ -138,7 +140,11 @@ public class ReportListAdapter extends RecyclerView.Adapter<ReportListAdapter.My
                     dbRef.child("Users/" + item.getReporter()).addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot2) {
-                            holder.content.setText("Reported By: " + snapshot2.child("fname").getValue().toString() + " " + snapshot2.child("lname").getValue().toString());
+                            if(snapshot2.exists()){
+                                holder.content.setText("Reported By: " + snapshot2.child("fname").getValue().toString() + " " + snapshot2.child("lname").getValue().toString());
+                            }else{
+                                holder.content.setText("Reported By Anonymous User");
+                            }
                         }
 
                         @Override
