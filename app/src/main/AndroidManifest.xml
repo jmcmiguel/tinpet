@@ -8,18 +8,17 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/tinpet_logo"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/tinpet_logo_round"
         android:supportsRtl="true"
-        android:largeHeap="true"
-        android:hardwareAccelerated="false"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.example.tinpet.activities.SplashscreenActivity"
+            android:name=".activities.SplashscreenActivity"
             android:theme="@style/WhiteStatusBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,39 +27,41 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.tinpet.activities.AlternativeLoginActivity"
-            android:theme="@style/BlackStatusBar"/>
-        <activity android:name="com.example.tinpet.activities.EmailVerificationActivity"
-            android:theme="@style/BlackStatusBar"/>
-        <activity android:name="com.example.tinpet.activities.PhoneVerificationActivity"
-            android:theme="@style/BlackStatusBar"/>
+            android:name=".activities.AlternativeLoginActivity"
+            android:theme="@style/BlackStatusBar" />
         <activity
-            android:name="com.example.tinpet.activities.StartActivity"
-            android:theme="@style/BlackStatusBar"/>
+            android:name=".activities.EmailVerificationActivity"
+            android:theme="@style/BlackStatusBar" />
         <activity
-            android:name="com.example.tinpet.activities.MainActivity"
-            android:theme="@style/BlackStatusBar"/>
+            android:name=".activities.PhoneVerificationActivity"
+            android:theme="@style/BlackStatusBar" />
+        <activity
+            android:name=".activities.StartActivity"
+            android:theme="@style/BlackStatusBar" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/BlackStatusBar" />
         <activity
             android:name=".activities.EmailLoginActivity"
-            android:theme="@style/BlackStatusBar"/>
+            android:theme="@style/BlackStatusBar" />
         <activity
             android:name=".activities.EmailRegisterActivity"
-            android:theme="@style/BlackStatusBar"/>
+            android:theme="@style/BlackStatusBar" />
         <activity
             android:name=".activities.PetRegisterActivity"
-            android:theme="@style/BlackStatusBar"/>
+            android:theme="@style/BlackStatusBar" />
         <activity
             android:name=".activities.EmailForgotPasswordActivity"
-            android:theme="@style/BlackStatusBar"/>
+            android:theme="@style/BlackStatusBar" />
         <activity
             android:name=".activities.MessageActivity"
-            android:theme="@style/BlackStatusBar"/>
+            android:theme="@style/BlackStatusBar" />
         <activity
             android:name=".activities.SuperAdminActivity"
             android:theme="@style/BlackStatusBar" />
         <activity
-        android:name=".activities.CreateAdminActivity"
-        android:theme="@style/BlackStatusBar" />
+            android:name=".activities.CreateAdminActivity"
+            android:theme="@style/BlackStatusBar" />
         <activity
             android:name=".activities.UpdateAdminActivity"
             android:theme="@style/BlackStatusBar" />
@@ -79,7 +80,9 @@
         <activity
             android:name=".activities.Admin2Activity"
             android:theme="@style/BlackStatusBar" />
-
+        <activity
+            android:name=".activities.Terms"
+            android:theme="@style/BlackStatusBar" />
     </application>
 
 </manifest>

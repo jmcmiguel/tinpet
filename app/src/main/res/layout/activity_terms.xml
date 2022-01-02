@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".activities.Terms">
+
+
+    <LinearLayout
+        android:id="@+id/loginCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.example.tinpet.widgets.BounceScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tnc_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Terms and Conditions"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/tnc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/tnc1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tnc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/tnc2"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tnc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/tnc3"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tnc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/tnc4"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tnc5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/tnc5"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tnc6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/tnc6"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tnc7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/tnc7"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tnc8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/tnc8"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tnc9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/tnc9"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tnc10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:text="@string/tnc10"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_accept"
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/btn_outline_bg"
+                    android:foregroundGravity="center"
+                    android:text="Accept"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+        </com.example.tinpet.widgets.BounceScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_terms_back"
+            android:layout_width="56dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_outline_bg"
+            android:foreground="?attr/actionModeCloseDrawable"
+            android:foregroundGravity="center"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+</RelativeLayout>

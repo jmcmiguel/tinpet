@@ -160,7 +160,7 @@ public class PetRegisterActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext, StartActivity.class);
+                Intent intent = new Intent(mContext, Terms.class);
                 startActivity(intent);
                 finish();
             }

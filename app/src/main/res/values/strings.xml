@@ -1,26 +1,142 @@
 <resources>
     <string name="app_name">Tin Pet</string>
 
-    <string name="title_slider_1">PASSEZ A TINDER GOLD</string>
+    <string name="title_slider_1">PASSEZ A Tinpet GOLD</string>
     <string name="description_slider_1">Decouvrez qui vous a envoyé des Likes et encore plus</string>
 
     <string name="title_slider_2">Obtenez plus de matchs rapidement</string>
     <string name="description_slider_2">Boostez votre profil une fois par mois</string>
 
     <string name="title_slider_3">Swipez dans le monde entier</string>
-    <string name="description_slider_3">Avec Tinder Plus, obtenez un passeport pour matcher dans le monde entier</string>
+    <string name="description_slider_3">Avec Tinpet Plus, obtenez un passeport pour matcher dans le monde entier</string>
 
     <string name="title_slider_4">Demarquez vous avec des Super Likes</string>
     <string name="description_slider_4">Multipliez vos chances de Matchs par 3</string>
 
     <string name="title_slider_5">Je voulais swiper vers la droite</string>
-    <string name="description_slider_5">Profitez du nombre illimites de Retour en arriere avec Tinder Plus</string>
+    <string name="description_slider_5">Profitez du nombre illimites de Retour en arriere avec Tinpet Plus</string>
 
     <string name="title_slider_6">Augmentez vos chances de Matchs</string>
-    <string name="description_slider_6">Profitez du nombre illimites de Likes avec Tinder Plus</string>
+    <string name="description_slider_6">Profitez du nombre illimites de Likes avec Tinpet Plus</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tnc1">
+        By using the tinpet application you are agreeing to be bound by the following terms and conditions ("Terms of Use").
+    </string>
+
+    <string name="tnc2">
+        1. Acceptance of Terms of Use Agreement.
+
+By creating a Tinpet account, whether through a mobile device, mobile application or computer (collectively, the “Service”) you agree to be bound by (i) these Terms of Use, (ii) our Privacy Policy, Cookie Policy, Arbitration Procedures (if applicable to you), Safety Tips, and Community Guidelines, each of which is incorporated by reference into this Agreement, and (iii) any terms disclosed and agreed to by you if you purchase additional features, products or services we offer on the Service (collectively, this "Agreement"). If you do not accept and agree to be bound by all of the terms of this Agreement, please do not use the Service.
+
+We may make changes to this Agreement and to the Service from time to time. We may do this for a variety of reasons including to reflect changes in or requirements of the law, new features, or changes in business practices. The most recent version of this Agreement will be posted on the Service under Settings and also on tinpet, and you should regularly check for the most recent version. The most recent version is the version that applies. If the changes include material changes to your rights or obligations, we will notify you at least 30 days in advance of the changes (unless we’re unable to do so under applicable law) by reasonable means, which could include notification through the Service or via email. If you continue to use the Service after the changes become effective, then you agree to the revised Agreement.
+    </string>
+
+    <string name="tnc3">
+        2. Eligibility.
+
+You are not authorized to create an account or access or use the Service or systems it resides on unless all of the following are true:
+
+    you are at least 12 years of age.
+    you can form a binding contract with Tinpet,
+    you are not a person who is barred from using the Service under the laws of the Philippines or any other applicable jurisdiction (for example, you do not appear on the Philippines Treasury Department’s list of Specially Designated Nationals or face any other similar prohibition),
+    you will comply with this Agreement and all applicable local, state, national and international laws, rules and regulations, and
+    you have never been convicted of a felony or indictable offense (or crime of similar severity), a sex crime, or any crime involving violence, and that you are not required to register as a sex offender with any state, federal or local sex offender registry.
+    </string>
+
+    <string name="tnc4">
+        3. Your Account.
+
+In order to use Tinpet, you may sign in using email. You are responsible for maintaining the confidentiality of your login credentials you use to sign up for Tinpet, and you are solely responsible for all activities that occur under those credentials. If you think someone has gained access to your account, please immediately contact us.
+    </string>
+
+    <string name="tnc5">
+        5. Safety; Your Interactions with Other Members.
+
+Though Tinpet strives to encourage a respectful member experience through features like the double opt-in that allows members to communicate only after they have both indicated interest in one another, Tinpet is not responsible for the conduct of any member on or off of the Service. You agree to use caution in all interactions with other members, particularly if you decide to communicate off the Service or meet in person. In addition, you agree to review and follow Tinpet’s Safety Tips prior to using the Service. You agree that you will not provide your financial information (for example, your credit card or bank account information), or wire or otherwise send money to other members.
+
+YOU ARE SOLELY RESPONSIBLE FOR YOUR INTERACTIONS WITH OTHER MEMBERS. YOU UNDERSTAND THAT Tinpet DOES NOT CONDUCT CRIMINAL BACKGROUND CHECKS ON ITS MEMBERS OR OTHERWISE INQUIRE INTO THE BACKGROUND OF ITS MEMBERS. Tinpet MAKES NO REPRESENTATIONS OR WARRANTIES AS TO THE CONDUCT OR COMPATIBILITY OF MEMBERS.
+    </string>
+
+    <string name="tnc6">
+        6. Rights TinPet Grants You.
+
+TinPet grants you a personal, worldwide, royalty-free, non-assignable, nonexclusive, revocable, and non-sublicensable license to access and use the Service. This license is for the sole purpose of letting you use and enjoy the Service’s benefits as intended by TinPet and permitted by this Agreement. This license and any authorization to access the Service are automatically revoked in the event that you do any of the following:
+
+    use the Service or any content contained in the Service for any commercial purposes without our written consent.
+    copy, modify, transmit, create any derivative works from, make use of, or reproduce in any way any copyrighted material, images, trademarks, trade names, service marks, or other intellectual property, content or proprietary information accessible through the Service without TinPet’s prior written consent.
+    express or imply that any statements you make are endorsed by TinPet.
+    use any robot, bot, spider, crawler, scraper, site search/retrieval application, proxy or other manual or automatic device, method or process to access, retrieve, index, "data mine", or in any way reproduce or circumvent the navigational structure or presentation of the Service or its contents.
+    use the Service in any way that could interfere with, disrupt or negatively affect the Service or the servers or networks connected to the Service.
+    upload viruses or other malicious code or otherwise compromise the security of the Service.
+    forge headers or otherwise manipulate identifiers in order to disguise the origin of any information transmitted to or through the Service.
+    "frame" or "mirror" any part of the Service without TinPet’s prior written authorization.
+    use meta tags or code or other devices containing any reference to TinPet or the Service (or any trademark, trade name, service mark, logo or slogan of TinPet) to direct any person to any other website for any purpose.
+    modify, adapt, sublicense, translate, sell, reverse engineer, decipher, decompile or otherwise disassemble any portion of the Service, or cause others to do so.
+    use or develop any third-party applications that interact with the Service or other members Content or information without our written consent.
+    use, access, or publish the TinPet application programming interface without our written consent.
+    probe, scan or test the vulnerability of our Service or any system or network.
+    encourage or promote any activity that violates this Agreement.
+
+TinPet may investigate and take any available legal action in response to illegal or unauthorized uses of the Service, including termination of your account.
+
+Any software that we provide you may automatically download and install upgrades, updates, or other new features. You may be able to adjust these automatic downloads through your devices settings.
+    </string>
+
+    <string name="tnc7">
+        7. Rights you Grant TinPet.
+
+By creating an account, you grant to TinPet a worldwide, transferable, sub-licensable, royalty-free, right and license to host, store, use, copy, display, reproduce, adapt, edit, publish, modify and distribute information you authorize us to access from third parties, as well as any information you post, upload, display or otherwise make available (collectively, "post") on the Service or transmit to other members (collectively, "Content"). TinPets license to your Content shall be non-exclusive, except that TinPets license shall be exclusive with respect to derivative works created through use of the Service. For example, TinPet would have an exclusive license to screenshots of the Service that include your Content. In addition, so that TinPet can prevent the use of your Content outside of the Service, you authorize TinPet to act on your behalf with respect to infringing uses of your Content taken from the Service by other members or third parties. This expressly includes the authority, but not the obligation, to send notices pursuant to 17 U.S.C. § 512(c)(3) (i.e., DMCA Takedown Notices) on your behalf if your Content is taken and used by third parties outside of the Service. Our license to your Content is subject to your rights under applicable law (for example laws regarding personal data protection to the extent any Content contains personal information as defined by those laws) and is for the limited purpose of operating, developing, providing, and improving the Service and researching and developing new ones. You agree that any Content you place or that you authorize us to place on the Service may be viewed by other members and may be viewed by any person visiting or participating in the Service (such as individuals who may receive shared Content from other TinPet members).
+
+You agree that all information that you submit upon creation of your account, including information submitted from your Facebook account, is accurate and truthful and you have the right to post the Content on the Service and grant the license to TinPet above.
+
+You understand and agree that we may monitor or review any Content you post as part of a Service. We may delete any Content, in whole or in part, that in our sole judgment violates this Agreement or may harm the reputation of the Service.
+
+When communicating with our customer care representatives, you agree to be respectful and kind. If we feel that your behavior towards any of our customer care representatives or other employees is at any time threatening, harassing, or offensive, we reserve the right to immediately terminate your account.
+
+In consideration for TinPet allowing you to use the Service, you agree that we, our affiliates, and our third-party partners may place advertising on the Service. By submitting suggestions or feedback to TinPet regarding our Service, you agree that TinPet may use and share such feedback for any purpose without compensating you.
+
+Please be informed that TinPet may access, store and disclose your account information and Content if required to do so by law, by performing its agreement with you, or in a good faith belief that such access, storage or disclosure satisfies a legitimate interest, including to: (i) comply with legal process; (ii) enforce the Agreement; (iii) respond to claims that any Content violates the rights of third parties; (iv) respond to your requests for customer service; or (v) protect the rights, property or personal safety of the Company or any other person.
+    </string>
+
+    <string name="tnc8">
+        8. Community Rules.
+
+By using the Service, you agree that you will not:
+
+    use the Service for any purpose that is illegal or prohibited by this Agreement.
+    use the Service for any harmful or nefarious purpose
+    use the Service in order to damage TinPet
+    violate our Community Guidelines, as updated from time to time.
+    spam, solicit money from or defraud any members.
+    impersonate any person or entity or post any images of another person without his or her permission.
+    bully, "stalk", intimidate, assault, harass, mistreat or defame any person.
+    post any Content that violates or infringes anyones rights, including rights of publicity, privacy, copyright, trademark or other intellectual property or contract right.
+    post any Content that is hate speech, threatening, sexually explicit or pornographic.
+    post any Content that incites violence; or contains nudity or graphic or gratuitous violence.
+    post any Content that promotes racism, bigotry, hatred or physical harm of any kind against any group or individual.
+    solicit passwords for any purpose, or personal identifying information for commercial or unlawful purposes from other members or disseminate another persons personal information without his or her permission.
+    use another members account, share an account with another member, or maintain more than one account.
+    create another account if we have already terminated your account, unless you have our permission.
+
+TinPet reserves the right to investigate and/or terminate your account without a refund of any purchases if you have violated this Agreement, misused the Service or behaved in a way that TinPEt regards as inappropriate or unlawful, including actions or communications that occur on or off the Service.
+    </string>
+
+    <string name="tnc9">
+9. Other Members Content.
+
+Although TinPet reserves the right to review and remove Content that violates this Agreement, such Content is the sole responsibility of the member who posts it, and TinPet cannot guarantee that all Content will comply with this Agreement. If you see Content on the Service that violates this Agreement, please report it within the Service or via our contact form.
+    </string>
+
+    <string name="tnc10">
+        10. Disclaimers.
+
+TinPet PROVIDES THE SERVICE ON AN “AS IS” AND “AS AVAILABLE” BASIS AND TO THE EXTENT PERMITTED BY APPLICABLE LAW, GRANTS NO WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE WITH RESPECT TO THE SERVICE (INCLUDING ALL CONTENT CONTAINED THEREIN), INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF SATISFACTORY QUALITY, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT. TinPet DOES NOT REPRESENT OR WARRANT THAT (A) THE SERVICE WILL BE UNINTERRUPTED, SECURE OR ERROR FREE, (B) ANY DEFECTS OR ERRORS IN THE SERVICE WILL BE CORRECTED, OR (C) THAT ANY CONTENT OR INFORMATION YOU OBTAIN ON OR THROUGH THE SERVICE WILL BE ACCURATE.
+
+TinPet TAKES NO RESPONSIBILITY FOR ANY CONTENT THAT YOU OR ANOTHER MEMBER OR THIRD PARTY POSTS, SENDS OR RECEIVES THROUGH THE SERVICE. ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE SERVICE IS ACCESSED AT YOUR OWN DISCRETION AND RISK.
+    </string>
 
     <!--  Report Type  -->
     <string-array name="report_type">
@@ -498,5 +614,9 @@
         <item>Admin 1</item>
         <item>Admin 2</item>
     </string-array>
+    <string name="title_activity_terms_and_conditions">TermsAndConditions</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_terms">Terms</string>
 
 </resources>

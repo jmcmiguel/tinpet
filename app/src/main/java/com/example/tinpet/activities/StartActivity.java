@@ -125,7 +125,7 @@ public class StartActivity extends AppCompatActivity {
         });
 
         txtRegister.setOnClickListener(view -> {
-            Intent intent = new Intent(mContext, PetRegisterActivity.class);
+            Intent intent = new Intent(mContext, Terms.class);
             startActivity(intent);
             finish();
         });

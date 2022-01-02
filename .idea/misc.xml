@@ -35,6 +35,7 @@
         <entry key="app/src/main/res/layout/activity_splashscreen.xml" value="0.296195652173913" />
         <entry key="app/src/main/res/layout/activity_start.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_super_admin.xml" value="0.23055555555555557" />
+        <entry key="app/src/main/res/layout/activity_terms.xml" value="0.14340198321891687" />
         <entry key="app/src/main/res/layout/activity_update_admin.xml" value="0.2708333333333333" />
         <entry key="app/src/main/res/layout/activity_view_report.xml" value="0.10348360655737705" />
         <entry key="app/src/main/res/layout/activity_view_reports.xml" value="0.22631578947368422" />
@@ -54,6 +55,8 @@
         <entry key="app/src/main/res/layout/fragment_message.xml" value="0.2767210144927536" />
         <entry key="app/src/main/res/layout/fragment_report_details.xml" value="0.23055555555555557" />
         <entry key="app/src/main/res/layout/fragment_swipe_view.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_terms.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_terms_and_conditions.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_user_settings.xml" value="0.22" />
         <entry key="app/src/main/res/layout/tinder_swipe_in_msg_view.xml" value="0.2875905797101449" />
         <entry key="app/src/main/res/layout/tinder_swipe_out_msg_view.xml" value="0.2875905797101449" />

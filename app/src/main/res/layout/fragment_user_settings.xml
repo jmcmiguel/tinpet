@@ -15,7 +15,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView_account_settings_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="20dp"
@@ -28,7 +28,7 @@
             android:layout_marginTop="15dp">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textView_maximum_distance_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
@@ -56,7 +56,7 @@
             android:layout_marginTop="15dp">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textView_age_range"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
