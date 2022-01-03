@@ -43,76 +43,95 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <Spinner
-                android:id="@+id/spnr_breed_size"
-                style="@style/FirebaseUI.CountrySpinner"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="30dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:entries="@array/breeds_size_array"
-                android:padding="20dp"
-                android:popupBackground="@color/light_gray"
-                android:spinnerMode="dialog" />
+                android:orientation="vertical">
 
-            <Spinner
-                android:id="@+id/spnr_breed"
-                style="@style/FirebaseUI.CountrySpinner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="30dp"
-                android:layout_weight="1"
-                android:padding="20dp"
-                android:popupBackground="@color/light_gray"
-                android:spinnerMode="dialog" />
+                <Spinner
+                    android:id="@+id/spnr_breed_size"
+                    style="@style/FirebaseUI.CountrySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_weight="1"
+                    android:entries="@array/breeds_size_array"
+                    android:padding="20dp"
+                    android:popupBackground="@color/light_gray"
+                    android:spinnerMode="dialog" />
 
-            <Spinner
-                android:id="@+id/spnr_breed2"
-                style="@style/FirebaseUI.CountrySpinner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="30dp"
-                android:layout_weight="1"
-                android:padding="20dp"
-                android:popupBackground="@color/light_gray"
-                android:spinnerMode="dialog"
-                android:visibility="gone" />
+                <Spinner
+                    android:id="@+id/spnr_breed"
+                    style="@style/FirebaseUI.CountrySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:popupBackground="@color/light_gray"
+                    android:spinnerMode="dialog" />
 
-            <Spinner
-                android:id="@+id/spnr_breed3"
-                style="@style/FirebaseUI.CountrySpinner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="30dp"
-                android:layout_weight="1"
-                android:padding="20dp"
-                android:popupBackground="@color/light_gray"
-                android:spinnerMode="dialog"
-                android:visibility="gone" />
+                <Spinner
+                    android:id="@+id/spnr_breed2"
+                    style="@style/FirebaseUI.CountrySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:popupBackground="@color/light_gray"
+                    android:spinnerMode="dialog"
+                    android:visibility="gone" />
 
-            <Spinner
-                android:id="@+id/spnr_breed4"
-                style="@style/FirebaseUI.CountrySpinner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="30dp"
-                android:layout_weight="1"
-                android:padding="20dp"
-                android:popupBackground="@color/light_gray"
-                android:spinnerMode="dialog"
-                android:visibility="gone" />
+                <Spinner
+                    android:id="@+id/spnr_breed3"
+                    style="@style/FirebaseUI.CountrySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:popupBackground="@color/light_gray"
+                    android:spinnerMode="dialog"
+                    android:visibility="gone" />
 
-            <Spinner
-                android:id="@+id/spnr_breed5"
-                style="@style/FirebaseUI.CountrySpinner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="30dp"
-                android:layout_weight="1"
-                android:padding="20dp"
-                android:popupBackground="@color/light_gray"
-                android:spinnerMode="dialog"
-                android:visibility="gone" />
+                <Spinner
+                    android:id="@+id/spnr_breed4"
+                    style="@style/FirebaseUI.CountrySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:popupBackground="@color/light_gray"
+                    android:spinnerMode="dialog"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spnr_breed5"
+                    style="@style/FirebaseUI.CountrySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:popupBackground="@color/light_gray"
+                    android:spinnerMode="dialog"
+                    android:visibility="gone" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/spnr_breed_text"
+                    style="@style/FirebaseUI.TextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_weight="1"
+                    android:hint="Pet Breed"
+                    android:inputType="textPersonName|text"
+                    android:padding="20dp"
+                    android:visibility="gone" />
+            </LinearLayout>
 
         </com.google.android.material.textfield.TextInputLayout>
 

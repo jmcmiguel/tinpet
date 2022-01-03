@@ -125,12 +125,15 @@ public class EmailRegisterActivity extends AppCompatActivity {
                 }
             }, year, month, day);
 
+            datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
             datePickerDialog.show();
         });
 
 
         // Register Button onClick Listener
         btnRegister.setOnClickListener(view -> {
+
+
 
             final String email = txtEmailAddress.getText().toString();
             final String password = txtPassword.getText().toString();
@@ -149,6 +152,11 @@ public class EmailRegisterActivity extends AppCompatActivity {
             final String petBday = extras.getString("pet_bday");
             final String petGender = extras.getString("pet_gender");
             final String petSize = extras.getString("breed_size");
+
+            if(isEmpty(fname, lname, email, password, gender, bday)){
+                Toast.makeText(mContext, "All Fields Required!", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
             firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(EmailRegisterActivity.this, task -> {
                 if(!task.isSuccessful()){
@@ -209,8 +217,16 @@ public class EmailRegisterActivity extends AppCompatActivity {
                 }
             });
         });
+    }
 
-
+    public Boolean isEmpty(String fname, String lname, String email, String password,
+    String gender, String bday){
+        if(fname.trim().length() == 0 || lname.trim().length() == 0 || email.trim().length() == 0 ||
+        password.trim().length() == 0 || gender.trim().length() == 0 || bday.trim().length() == 0){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     @Override

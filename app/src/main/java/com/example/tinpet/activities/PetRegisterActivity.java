@@ -43,9 +43,9 @@ public class PetRegisterActivity extends AppCompatActivity {
     FirebaseAuth firebaseAuth;
     FirebaseAuth.AuthStateListener firebaseAuthStateListener;
     TextInputEditText txtPetName;
-    EditText txtPetBday;
+    EditText txtPetBday, petBreedText;
     Spinner spnrPetBreed, spnrPetBreed2, spnrPetBreed3, spnrPetBreed4, spnrPetBreed5, spnrPetSize;
-    String petGender;
+    String petGender = "";
     Button btnPetNext, btnBack;
     Calendar petBdayCalendar;
     TextInputLayout mLayout;
@@ -68,8 +68,7 @@ public class PetRegisterActivity extends AppCompatActivity {
         btnPetNext = findViewById(R.id.btn_pet_next);
         btnBack = findViewById(R.id.btn_pet_register_back);
         spnrPetSize = findViewById(R.id.spnr_breed_size);
-
-
+        petBreedText = findViewById(R.id.spnr_breed_text);
 
         spnrPetSize.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -78,48 +77,64 @@ public class PetRegisterActivity extends AppCompatActivity {
                 String breedSize = adapterView.getItemAtPosition(i).toString();
                 String[] arraySpinner = mContext.getResources().getStringArray(R.array.small_breeds_array);
 
+                spnrPetBreed.setVisibility(View.VISIBLE);
+
                 if(breedSize.equals("Small Breeds")){
                     arraySpinner = mContext.getResources().getStringArray(R.array.small_breeds_array);
                     spnrPetBreed2.setVisibility(View.GONE);
                     spnrPetBreed3.setVisibility(View.GONE);
                     spnrPetBreed4.setVisibility(View.GONE);
                     spnrPetBreed5.setVisibility(View.GONE);
+                    petBreedText.setVisibility(View.GONE);
                 }else if(breedSize.equals("Medium Breeds")){
                     arraySpinner = mContext.getResources().getStringArray(R.array.medium_breeds_array);
                     spnrPetBreed2.setVisibility(View.GONE);
                     spnrPetBreed3.setVisibility(View.GONE);
                     spnrPetBreed4.setVisibility(View.GONE);
                     spnrPetBreed5.setVisibility(View.GONE);
+                    petBreedText.setVisibility(View.GONE);
                 }else if(breedSize.equals("Large Breeds")){
                     arraySpinner = mContext.getResources().getStringArray(R.array.large_breeds_array);
                     spnrPetBreed2.setVisibility(View.GONE);
                     spnrPetBreed3.setVisibility(View.GONE);
                     spnrPetBreed4.setVisibility(View.GONE);
                     spnrPetBreed5.setVisibility(View.GONE);
+                    petBreedText.setVisibility(View.GONE);
                 }else if(breedSize.equals("Mixed Breeds (2 Breeds)")){
                     arraySpinner = mContext.getResources().getStringArray(R.array.all_breeds_array);
                     spnrPetBreed2.setVisibility(View.VISIBLE);
                     spnrPetBreed3.setVisibility(View.GONE);
                     spnrPetBreed4.setVisibility(View.GONE);
                     spnrPetBreed5.setVisibility(View.GONE);
+                    petBreedText.setVisibility(View.GONE);
                 }else if(breedSize.equals("Mixed Breeds (3 Breeds)")){
                     arraySpinner = mContext.getResources().getStringArray(R.array.all_breeds_array);
                     spnrPetBreed2.setVisibility(View.VISIBLE);
                     spnrPetBreed3.setVisibility(View.VISIBLE);
                     spnrPetBreed4.setVisibility(View.GONE);
                     spnrPetBreed5.setVisibility(View.GONE);
+                    petBreedText.setVisibility(View.GONE);
                 }else if(breedSize.equals("Mixed Breeds (4 Breeds)")){
                     arraySpinner = mContext.getResources().getStringArray(R.array.all_breeds_array);
                     spnrPetBreed2.setVisibility(View.VISIBLE);
                     spnrPetBreed3.setVisibility(View.VISIBLE);
                     spnrPetBreed4.setVisibility(View.VISIBLE);
                     spnrPetBreed5.setVisibility(View.GONE);
+                    petBreedText.setVisibility(View.GONE);
                 }else if(breedSize.equals("Mixed Breeds (5 Breeds)")){
                     arraySpinner = mContext.getResources().getStringArray(R.array.all_breeds_array);
                     spnrPetBreed2.setVisibility(View.VISIBLE);
                     spnrPetBreed3.setVisibility(View.VISIBLE);
                     spnrPetBreed4.setVisibility(View.VISIBLE);
                     spnrPetBreed5.setVisibility(View.VISIBLE);
+                    petBreedText.setVisibility(View.GONE);
+                }else if(breedSize.equals("Specify")){
+                    petBreedText.setVisibility(View.VISIBLE);
+                    spnrPetBreed.setVisibility(View.GONE);
+                    spnrPetBreed2.setVisibility(View.GONE);
+                    spnrPetBreed3.setVisibility(View.GONE);
+                    spnrPetBreed4.setVisibility(View.GONE);
+                    spnrPetBreed5.setVisibility(View.GONE);
                 }
 
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(PetRegisterActivity.this,
@@ -170,15 +185,14 @@ public class PetRegisterActivity extends AppCompatActivity {
         // Show Calendar Modal onClick
         txtPetBday.setOnClickListener(view -> {
             DatePickerDialog datePickerDialog = new DatePickerDialog(
-                    mContext, new DatePickerDialog.OnDateSetListener() {
-                @Override
-                public void onDateSet(DatePicker datePicker, int year1, int month1, int day1) {
-                    month1 = month1 + 1;
-                    String date = month1 + "/" + day1 + "/" + year1;
-                    txtPetBday.setText(date);
-                }
-            }, year, month, day);
 
+                    mContext, (datePicker, year1, month1, day1) -> {
+                        month1 = month1 + 1;
+                        String date = month1 + "/" + day1 + "/" + year1;
+                        txtPetBday.setText(date);
+                    }, year, month, day);
+
+            datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
             datePickerDialog.show();
         });
 
@@ -195,39 +209,59 @@ public class PetRegisterActivity extends AppCompatActivity {
         };
 
         // Next Button onClick Listener
-        btnPetNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        btnPetNext.setOnClickListener(view -> {
 
-                Intent intent = new Intent(PetRegisterActivity.this, EmailRegisterActivity.class);
-                intent.putExtra("pet_name", txtPetName.getText().toString());
-                intent.putExtra("pet_breed", spnrPetBreed.getSelectedItem().toString());
-                intent.putExtra("breed_size", spnrPetSize.getSelectedItem().toString());
-
-                if(spnrPetSize.getSelectedItem().toString().equals("Mixed Breeds (2 Breeds)")){
-                    intent.putExtra("pet_breed2", spnrPetBreed2.getSelectedItem().toString());
-                }else if(spnrPetSize.getSelectedItem().toString().equals("Mixed Breeds (3 Breeds)")){
-                    intent.putExtra("pet_breed2", spnrPetBreed2.getSelectedItem().toString());
-                    intent.putExtra("pet_breed3", spnrPetBreed3.getSelectedItem().toString());
-                }else if(spnrPetSize.getSelectedItem().toString().equals("Mixed Breeds (4 Breeds)")){
-                    intent.putExtra("pet_breed2", spnrPetBreed2.getSelectedItem().toString());
-                    intent.putExtra("pet_breed3", spnrPetBreed3.getSelectedItem().toString());
-                    intent.putExtra("pet_breed4", spnrPetBreed4.getSelectedItem().toString());
-                }else if(spnrPetSize.getSelectedItem().toString().equals("Mixed Breeds (5 Breeds)")){
-                    intent.putExtra("pet_breed2", spnrPetBreed2.getSelectedItem().toString());
-                    intent.putExtra("pet_breed3", spnrPetBreed3.getSelectedItem().toString());
-                    intent.putExtra("pet_breed4", spnrPetBreed4.getSelectedItem().toString());
-                    intent.putExtra("pet_breed5", spnrPetBreed5.getSelectedItem().toString());
-                }
-
-                intent.putExtra("pet_bday", txtPetBday.getText().toString());
-                intent.putExtra("pet_gender", petGender);
-                startActivity(intent);
-                finish();
+            if(isFieldsEmpty(txtPetName.getText().toString(), txtPetBday.getText().toString(), petGender)){
+                Toast.makeText(mContext, "All fields are required!", Toast.LENGTH_SHORT).show();
+                return;
             }
+
+            // Make a toast if unspecified dog breed
+            if(petBreedText.getVisibility() == View.VISIBLE && petBreedText.getText().toString().trim().length() == 0){
+                Toast.makeText(mContext, "Dog Breed Unspecified!", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            Intent intent = new Intent(PetRegisterActivity.this, EmailRegisterActivity.class);
+            intent.putExtra("pet_name", txtPetName.getText().toString());
+            intent.putExtra("breed_size", spnrPetSize.getSelectedItem().toString());
+
+            // If dog breed specified
+            if(petBreedText.getVisibility() == View.VISIBLE && petBreedText.getText().toString().trim().length() > 0){
+                intent.putExtra("pet_breed", petBreedText.getText().toString());
+            }else{
+                intent.putExtra("pet_breed", spnrPetBreed.getSelectedItem().toString());
+            }
+
+            if(spnrPetSize.getSelectedItem().toString().equals("Mixed Breeds (2 Breeds)")){
+                intent.putExtra("pet_breed2", spnrPetBreed2.getSelectedItem().toString());
+            }else if(spnrPetSize.getSelectedItem().toString().equals("Mixed Breeds (3 Breeds)")){
+                intent.putExtra("pet_breed2", spnrPetBreed2.getSelectedItem().toString());
+                intent.putExtra("pet_breed3", spnrPetBreed3.getSelectedItem().toString());
+            }else if(spnrPetSize.getSelectedItem().toString().equals("Mixed Breeds (4 Breeds)")){
+                intent.putExtra("pet_breed2", spnrPetBreed2.getSelectedItem().toString());
+                intent.putExtra("pet_breed3", spnrPetBreed3.getSelectedItem().toString());
+                intent.putExtra("pet_breed4", spnrPetBreed4.getSelectedItem().toString());
+            }else if(spnrPetSize.getSelectedItem().toString().equals("Mixed Breeds (5 Breeds)")){
+                intent.putExtra("pet_breed2", spnrPetBreed2.getSelectedItem().toString());
+                intent.putExtra("pet_breed3", spnrPetBreed3.getSelectedItem().toString());
+                intent.putExtra("pet_breed4", spnrPetBreed4.getSelectedItem().toString());
+                intent.putExtra("pet_breed5", spnrPetBreed5.getSelectedItem().toString());
+            }
+
+            intent.putExtra("pet_bday", txtPetBday.getText().toString());
+            intent.putExtra("pet_gender", petGender);
+            startActivity(intent);
+            finish();
         });
+    }
 
-
+    public boolean isFieldsEmpty(String petName, String petBday, String petGender){
+        if(petName.trim().length() == 0 || petBday.trim().length() == 0 || petGender.trim().length() == 0){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     @Override
