@@ -361,6 +361,8 @@ public class SwipeViewFragment extends Fragment {
             return true;
         }else if(sizePref.equals("Mixed Breeds") && ds.contains("Mixed Breeds")){
             return true;
+        }else if(sizePref.equals("All Breeds")){
+            return true;
         }
 
         return false;

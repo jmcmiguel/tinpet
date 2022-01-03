@@ -197,7 +197,7 @@ public class EmailRegisterActivity extends AppCompatActivity {
 
                     userInfo.put(petNode + "age_pref", 20);
                     userInfo.put(petNode + "maximum_distance", 60);
-                    userInfo.put(petNode + "size_pref", "Small Breeds");
+                    userInfo.put(petNode + "size_pref", "All Breeds");
                     userInfo.put(userNode + "validID", validID);
                     userInfo.put(userNode + "medCert", medCert);
 

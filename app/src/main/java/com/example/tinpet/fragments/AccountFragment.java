@@ -159,6 +159,11 @@ public class AccountFragment extends Fragment implements View.OnClickListener {
                                     if(isChecked)
                                         breedSizePref = "Mixed Breeds";
                                     break;
+                                case R.id.pet_breed_all_breeds:
+                                    if(isChecked)
+                                        breedSizePref = "All Breeds";
+                                    break;
+
                             }
 
                             sizePref.setText("Showing: " + breedSizePref);

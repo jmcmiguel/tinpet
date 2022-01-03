@@ -85,33 +85,49 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:text="Show Me"
-                android:textSize="12sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Showing: "
+                    android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/txt_pref_breed_size"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Small Breed"
-                android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/txt_pref_breed_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small Breed"
+                    android:padding="5dp"
+                    android:textSize="12sp" />
+            </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/pref_breed_sizes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
-                android:orientation="horizontal"
-                android:id="@+id/pref_breed_sizes">
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/pet_breed_all_breeds"
+                    style="@android:style/Widget.CompoundButton.RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:onClick="breed_size_pref"
+                    android:text="All Breeds" />
 
                 <RadioButton
                     android:id="@+id/pet_breed_size_small_pref"
                     style="@android:style/Widget.CompoundButton.RadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:minHeight="48dp"
                     android:onClick="breed_size_pref"
                     android:text="Small" />
 
@@ -119,6 +135,7 @@
                     android:id="@+id/pet_breed_size_medium_pref"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:minHeight="48dp"
                     android:onClick="breed_size_pref"
                     android:text="Medium" />
 
@@ -126,6 +143,7 @@
                     android:id="@+id/pet_breed_size_large_pref"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:minHeight="48dp"
                     android:onClick="breed_size_pref"
                     android:text="Large" />
 
@@ -133,6 +151,7 @@
                     android:id="@+id/pet_breed_size_mixed_pref"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:minHeight="48dp"
                     android:onClick="breed_size_pref"
                     android:text="Mixed" />
             </RadioGroup>
