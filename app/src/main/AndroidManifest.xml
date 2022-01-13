@@ -7,17 +7,24 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
-        android:hardwareAccelerated="false"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/tinpet_logo"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:roundIcon="@mipmap/tinpet_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
+            android:name=".activities.ValidIdVerification"
+            android:exported="false" />
+        <activity
+            android:hardwareAccelerated="false"
             android:name=".activities.SplashscreenActivity"
             android:theme="@style/WhiteStatusBar">
             <intent-filter>
@@ -82,6 +89,9 @@
             android:theme="@style/BlackStatusBar" />
         <activity
             android:name=".activities.Terms"
+            android:theme="@style/BlackStatusBar" />
+        <activity
+            android:name=".activities.ValidIdView"
             android:theme="@style/BlackStatusBar" />
     </application>
 

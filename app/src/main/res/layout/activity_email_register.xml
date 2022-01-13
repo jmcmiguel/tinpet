@@ -8,13 +8,11 @@
     android:orientation="vertical"
     tools:context=".activities.EmailRegisterActivity">
 
-    <com.example.tinpet.widgets.BounceScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <com.example.tinpet.widgets.BounceScrollView
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/gradient_background"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+        android:background="@drawable/gradient_background">
 
     <LinearLayout
         android:id="@+id/loginCard"
@@ -150,10 +148,9 @@
 
             <ImageView
                 android:id="@+id/medcert_img"
-                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_launcher_background" />
+                android:layout_marginTop="20dp" />
 
             <Button
                 android:id="@+id/btn_medcert"
@@ -165,38 +162,6 @@
                 android:layout_marginEnd="20dp"
                 android:background="@drawable/btn_outline_bg"
                 android:text="Add Pet Medical Certificate"
-                android:textColor="@color/white" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:text="Owner Valid ID"
-                android:textSize="25sp" />
-
-            <ImageView
-                android:id="@+id/valid_id_img"
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_launcher_background" />
-
-            <Button
-                android:id="@+id/btn_valid_id"
-                fontPath="fonts/Poppins-Medium.ttf"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/btn_outline_bg"
-                android:text="Add Valid ID"
                 android:textColor="@color/white" />
         </com.google.android.material.textfield.TextInputLayout>
 

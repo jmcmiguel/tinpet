@@ -164,6 +164,19 @@
             android:text="Approve User"
             android:textColor="@color/white" />
 
+        <Button
+            android:id="@+id/btn_user_reject"
+            fontPath="fonts/Poppins-Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_outline_bg"
+            android:text="Reject User"
+            android:textColor="@color/white" />
+
     </LinearLayout>
 
 </com.example.tinpet.widgets.BounceScrollView>

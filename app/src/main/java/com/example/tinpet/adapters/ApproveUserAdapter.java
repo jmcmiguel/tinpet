@@ -94,6 +94,7 @@ public class ApproveUserAdapter extends RecyclerView.Adapter<ApproveUserAdapter.
                     ImageView medCert = dialog.getHolderView().findViewById(R.id.medcert_img);
                     ImageView validID = dialog.getHolderView().findViewById(R.id.valid_id_img);
                     Button approveUser = dialog.getHolderView().findViewById(R.id.btn_user_approve);
+                    Button rejectUser = dialog.getHolderView().findViewById(R.id.btn_user_reject);
                     EditText username = dialog.getHolderView().findViewById(R.id.user_name);
                     EditText useremail = dialog.getHolderView().findViewById(R.id.user_email);
                     EditText usergender = dialog.getHolderView().findViewById(R.id.user_gender);
@@ -121,6 +122,7 @@ public class ApproveUserAdapter extends RecyclerView.Adapter<ApproveUserAdapter.
                                 .into(validID);
                     }
 
+                    // Approve User Button Listener
                     approveUser.setOnClickListener(view1 -> {
                         Map info = new HashMap<>();
                         String usernode = "Users/" + item.getUid() + "/";
@@ -134,6 +136,28 @@ public class ApproveUserAdapter extends RecyclerView.Adapter<ApproveUserAdapter.
                             }
                         });
 
+                    });
+
+                    // Reject User Button Listener
+                    rejectUser.setOnClickListener(view2 -> {
+
+                        Map<String, Object> data = new HashMap<>();
+                        data.put("uid", item.getUid());
+
+                        rejectUser(data)
+                                .addOnCompleteListener(task -> {
+                                    if (!task.isSuccessful()) {
+                                        Exception e = task.getException();
+                                        if (e instanceof FirebaseFunctionsException) {
+                                            FirebaseFunctionsException ffe = (FirebaseFunctionsException) e;
+                                            FirebaseFunctionsException.Code code = ffe.getCode();
+                                            Object details = ffe.getDetails();
+                                            Toast.makeText(context, details.toString(), Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+
+                                    Toast.makeText(context, "Rejected User", Toast.LENGTH_SHORT).show();
+                                });
                     });
 
                 })
@@ -157,6 +181,16 @@ public class ApproveUserAdapter extends RecyclerView.Adapter<ApproveUserAdapter.
     private Task<String> disableUser(Map<String, Object> data) {
         return mFunctions
                 .getHttpsCallable("disableUser")
+                .call(data)
+                .continueWith(task -> {
+                    String result = (String) task.getResult().getData();
+                    return result;
+                });
+    }
+
+    private Task<String> rejectUser(Map<String, Object> data) {
+        return mFunctions
+                .getHttpsCallable("rejectUser")
                 .call(data)
                 .continueWith(task -> {
                     String result = (String) task.getResult().getData();
