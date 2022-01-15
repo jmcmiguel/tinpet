@@ -52,12 +52,10 @@ public class EmailRegisterActivity extends AppCompatActivity {
     Context mContext;
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     FirebaseUser authCurrentUser = firebaseAuth.getCurrentUser();
-    Uri valid_id_uri;
     Uri pet_med_cert;
     DatabaseReference dbRef = FirebaseDatabase.getInstance("https://tinpet-401ae-default-rtdb.asia-southeast1.firebasedatabase.app").getReference();
 
     ImageView medcertImg;
-    ImageView idImg;
 
     String medCert = null;
 
@@ -111,7 +109,6 @@ public class EmailRegisterActivity extends AppCompatActivity {
         btnBack = findViewById(R.id.btn_email_register_back);
         btnMedcert = findViewById(R.id.btn_medcert);
         medcertImg = findViewById(R.id.medcert_img);
-        idImg = findViewById(R.id.valid_id_img);
 
         bdayCalendar = Calendar.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();

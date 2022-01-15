@@ -87,12 +87,15 @@ public class ApproveUserAdapter extends RecyclerView.Adapter<ApproveUserAdapter.
 
         final ApproveUserItem item = approveUserItemList.get(position);
 
+        holder.name.setText(item.getName());
+        holder.thumbnail.setImageResource(R.drawable.account_circle2);
+        holder.content.setText(item.getEmail());
+
         dialog = DialogPlus.newDialog(context)
                 .setContentHolder(new ViewHolder(R.layout.fragment_admin_view_user_approval))
                 .setGravity(Gravity.BOTTOM)
                 .setOnClickListener((dialog, view) -> {
                     ImageView medCert = dialog.getHolderView().findViewById(R.id.medcert_img);
-                    ImageView validID = dialog.getHolderView().findViewById(R.id.valid_id_img);
                     Button approveUser = dialog.getHolderView().findViewById(R.id.btn_user_approve);
                     Button rejectUser = dialog.getHolderView().findViewById(R.id.btn_user_reject);
                     EditText username = dialog.getHolderView().findViewById(R.id.user_name);
@@ -114,12 +117,6 @@ public class ApproveUserAdapter extends RecyclerView.Adapter<ApproveUserAdapter.
                         Glide.with(context)
                                 .load(Uri.parse(item.getMedcert()))
                                 .into(medCert);
-                    }
-
-                    if(item.getValidID() != null){
-                        Glide.with(context)
-                                .load(Uri.parse(item.getValidID()))
-                                .into(validID);
                     }
 
                     // Approve User Button Listener
@@ -164,9 +161,7 @@ public class ApproveUserAdapter extends RecyclerView.Adapter<ApproveUserAdapter.
                 .setExpanded(true, 900)
                 .create();
 
-         holder.name.setText(item.getName());
-         holder.thumbnail.setImageResource(R.drawable.account_circle2);
-         holder.content.setText(item.getEmail());
+
 
          holder.parent.setOnClickListener(view -> {
              dialog.show();
