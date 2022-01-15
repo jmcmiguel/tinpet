@@ -3,6 +3,7 @@ package com.example.tinpet.adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -87,14 +88,11 @@ public class ApproveUserAdapter extends RecyclerView.Adapter<ApproveUserAdapter.
 
         final ApproveUserItem item = approveUserItemList.get(position);
 
-        holder.name.setText(item.getName());
-        holder.thumbnail.setImageResource(R.drawable.account_circle2);
-        holder.content.setText(item.getEmail());
-
         dialog = DialogPlus.newDialog(context)
                 .setContentHolder(new ViewHolder(R.layout.fragment_admin_view_user_approval))
                 .setGravity(Gravity.BOTTOM)
                 .setOnClickListener((dialog, view) -> {
+
                     ImageView medCert = dialog.getHolderView().findViewById(R.id.medcert_img);
                     Button approveUser = dialog.getHolderView().findViewById(R.id.btn_user_approve);
                     Button rejectUser = dialog.getHolderView().findViewById(R.id.btn_user_reject);
@@ -102,6 +100,8 @@ public class ApproveUserAdapter extends RecyclerView.Adapter<ApproveUserAdapter.
                     EditText useremail = dialog.getHolderView().findViewById(R.id.user_email);
                     EditText usergender = dialog.getHolderView().findViewById(R.id.user_gender);
                     EditText userbday = dialog.getHolderView().findViewById(R.id.user_bday);
+
+                    Log.d("loglog", item.toString());
 
                     username.setText(item.getName());
                     useremail.setText(item.getEmail());
@@ -161,7 +161,9 @@ public class ApproveUserAdapter extends RecyclerView.Adapter<ApproveUserAdapter.
                 .setExpanded(true, 900)
                 .create();
 
-
+        holder.name.setText(item.getName());
+        holder.thumbnail.setImageResource(R.drawable.account_circle2);
+        holder.content.setText(item.getEmail());
 
          holder.parent.setOnClickListener(view -> {
              dialog.show();

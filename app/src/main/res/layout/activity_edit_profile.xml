@@ -47,6 +47,7 @@
                 android:layout_marginHorizontal="30dp"
                 android:hint="First Name"
                 android:inputType="textPersonName|text"
+                android:enabled="false"
                 android:padding="20dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -63,6 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
                 android:hint="Last Name"
+                android:enabled="false"
                 android:inputType="text"
                 android:padding="20dp" />
 
@@ -83,6 +85,7 @@
                 android:cursorVisible="false"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
+                android:enabled="false"
                 android:hint="Birthdate" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -100,6 +103,7 @@
                 android:layout_marginHorizontal="30dp"
                 android:layout_weight="1"
                 android:entries="@array/genders_array"
+                android:clickable="false"
                 android:padding="20dp"
                 android:spinnerMode="dialog" />
 
@@ -118,6 +122,7 @@
                 android:layout_marginHorizontal="30dp"
                 android:hint="Email Address"
                 android:inputType="textEmailAddress"
+                android:enabled="false"
                 android:padding="20dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -180,6 +185,7 @@
                 android:entries="@array/breeds_size_array"
                 android:padding="20dp"
                 android:popupBackground="@color/light_gray"
+                android:clickable="false"
                 android:spinnerMode="dialog" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -198,6 +204,7 @@
                 android:entries="@array/small_breeds_array"
                 android:padding="20dp"
                 android:popupBackground="@color/light_gray"
+                android:clickable="false"
                 android:spinnerMode="dialog" />
 
             <Spinner
@@ -210,6 +217,7 @@
                 android:padding="20dp"
                 android:popupBackground="@color/light_gray"
                 android:spinnerMode="dialog"
+                android:clickable="false"
                 android:visibility="gone" />
 
             <Spinner
@@ -222,6 +230,7 @@
                 android:padding="20dp"
                 android:popupBackground="@color/light_gray"
                 android:spinnerMode="dialog"
+                android:clickable="false"
                 android:visibility="gone" />
 
             <Spinner
@@ -233,6 +242,7 @@
                 android:layout_weight="1"
                 android:padding="20dp"
                 android:popupBackground="@color/light_gray"
+                android:clickable="false"
                 android:spinnerMode="dialog"
                 android:visibility="gone" />
 
@@ -246,6 +256,7 @@
                 android:padding="20dp"
                 android:popupBackground="@color/light_gray"
                 android:spinnerMode="dialog"
+                android:clickable="false"
                 android:visibility="gone" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -262,6 +273,7 @@
                 android:layout_marginHorizontal="30dp"
                 android:clickable="false"
                 android:cursorVisible="false"
+                android:enabled="false"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
                 android:hint="Birthdate" />
@@ -287,6 +299,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="genderRbClicked"
+                    android:enabled="false"
                     android:text="Male" />
 
                 <RadioButton
@@ -294,6 +307,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="genderRbClicked"
+                    android:enabled="false"
                     android:text="Female" />
             </RadioGroup>
 
